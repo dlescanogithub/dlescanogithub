@@ -1,8 +1,14 @@
 # Diego Lescano
 
-AI Engineering Manager transitioning to Deployment Strategist / Forward Deployed Engineer roles. Remote from Argentina. [LinkedIn](https://www.linkedin.com/in/diego-lescano-data-science)
+## Start here
 
-Focus: evals, governance, ROI and phased rollout for AI agents in production.
+AI / Deployment Strategist in Buenos Aires. AI Engineering Manager transitioning to Deployment Strategist / Forward Deployed Engineer roles. Focus: evals, governance, ROI and phased rollout for AI agents in production.
+
+Measured in the public READMEs: [agent-runtime-evals](https://github.com/dlescanogithub/agent-runtime-evals) stub gate 27/27, checker 1.00 (threshold 0.80); [agent-commerce-mandates-lab](https://github.com/dlescanogithub/agent-commerce-mandates-lab) stub suite 38/38, checker 1.00 (threshold 1.00); [voice-agent-cascade-lab](https://github.com/dlescanogithub/voice-agent-cascade-lab) 105 tests passed, 92.97% coverage. Stub, cassette, and package figures, not a model score.
+
+Demo: [voice-agent-cascade-lab](https://github.com/dlescanogithub/voice-agent-cascade-lab/blob/main/docs/demo/voice_agent_cascade_lab_demo_en_v2_real.mp4).
+
+Contact: [LinkedIn](https://www.linkedin.com/in/diego-lescano-data-science) · [X](https://x.com/diegolescano_ai)
 
 ## Projects
 
@@ -14,8 +20,9 @@ Focus: evals, governance, ROI and phased rollout for AI agents in production.
 | [![ci](https://github.com/dlescanogithub/agents-mcp-evals-workshop/actions/workflows/ci.yml/badge.svg)](https://github.com/dlescanogithub/agents-mcp-evals-workshop/actions/workflows/ci.yml) [agents-mcp-evals-workshop](https://github.com/dlescanogithub/agents-mcp-evals-workshop) | A tool-calling demo can still lack a check that a write happened, that a note stayed data, or that a run stayed inside a budget. | [demo](https://github.com/dlescanogithub/agents-mcp-evals-workshop/tree/main/docs/demo) | Passing the synthetic cases does not prove a team is ready for production. The workshop has not been delivered, and MCP here is a small teaching subset. |
 | [![ci](https://github.com/dlescanogithub/a2a-human-gate-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/dlescanogithub/a2a-human-gate-lab/actions/workflows/ci.yml) [a2a-human-gate-lab](https://github.com/dlescanogithub/a2a-human-gate-lab) | A back-office model can fill in a credit note or a supplier bank change and sound sure of itself. The wrong amount, the wrong account, or a second copy of an action that was already rejected can still leave the building. | [demo](https://github.com/dlescanogithub/a2a-human-gate-lab/tree/main/docs/demo) | CI and the cassette gate do not call a model. The company is fictional, the ledger is synthetic, and the live sample is one model and a small sample, planner only, with scripted approvals; it is not a proof and it did not put a model in the approval seat. |
 | [![ci](https://github.com/dlescanogithub/agent-commerce-mandates-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/dlescanogithub/agent-commerce-mandates-lab/actions/workflows/ci.yml) [agent-commerce-mandates-lab](https://github.com/dlescanogithub/agent-commerce-mandates-lab) | A shopping assistant can spend outside the rules a person thought they set: over a cap, at the wrong merchant, on a retry that charges twice, or because a product description told it to. | [demo](https://github.com/dlescanogithub/agent-commerce-mandates-lab/tree/main/docs/demo) | CI replays a stub planner on simulated prices and fictional merchants and does not call a model; this is not a payment network or a conformant AP2 or UCP stack. The live samples are one model and few samples, with a simulated approver, including one pass with the repo's own native client and an earlier scratch adapter; it does not certify this model or a later prompt. |
+| CI pending [voice-receptionist-consent-lab](https://github.com/dlescanogithub/voice-receptionist-consent-lab) | A voice receptionist can take a name, a national id, or a phone number before the caller agrees to recording and to AI processing. | No demo | v17 scores 8/10 on its simulation suite. CD08 still fails. That score is a few simulated runs on one model; it does not prove the consent rule or that English replies stay within two sentences. |
 
-Cases are synthetic and built with AI-assisted development.
+Cases are synthetic.
 
 Verification ran over 11 live rounds against a single model, for roughly US$1 of real spend; samples are small, so read the numbers as indicative, not conclusive.
 
